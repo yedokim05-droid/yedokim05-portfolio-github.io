@@ -1358,6 +1358,7 @@ function renderHubDashboard() {
             <div class="intro-video-frame">
               <canvas class="intro-video-canvas" aria-label="홈 영상"></canvas>
               <video class="intro-video-source" src="./video%20mov/hello_alpha.mp4" autoplay loop muted playsinline preload="auto"></video>
+              <video class="intro-video-source" src="./video/hello_alpha.mp4" autoplay loop muted playsinline preload="auto"></video>
             </div>
           </div>
           <div class="intro-grid">
