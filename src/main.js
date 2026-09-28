@@ -1357,7 +1357,6 @@ function renderHubDashboard() {
             <span class="name-side-note">${hero.nameEn}<br />2005 — PRESENT</span>
             <div class="intro-video-frame">
               <canvas class="intro-video-canvas" aria-label="홈 영상"></canvas>
-              <video class="intro-video-source" src="./video%20mov/hello_alpha.mp4" autoplay loop muted playsinline preload="auto"></video>
               <video class="intro-video-source" src="./video/hello_alpha.mp4" autoplay loop muted playsinline preload="auto"></video>
             </div>
           </div>
