@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>김예도 | Portfolio</title>
+<link rel="stylesheet" href="style.css?v=33" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="scene-container"></div>
+  <div id="css3d-layer"></div>
+  <div id="panel-zoom-2d-layer"></div>
+  <div id="label-layer"></div>
+
+  <div id="hint">
+    마우스 드래그: 회전 &nbsp;/&nbsp; 휠: 확대·축소 · 스크롤 &nbsp;/&nbsp; 우클릭 드래그: 이동
+  </div>
+
+  <div id="welcome-corner">WELCOME TO MY PORTFOLIO!</div>
+
+  <button id="back-to-map-btn" class="hidden">← 지도로 돌아가기</button>
+  <button id="zoom-close-btn" class="hidden" aria-label="닫기">✕</button>
+
+  <div id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-ring"></div>
+      <p>불러오는 중...</p>
+    </div>
+  </div>
+
+  <div id="dashboard-overlay" class="hidden">
+    <div id="dashboard-backdrop"></div>
+    <div id="dashboard-panel">
+      <button id="dashboard-close-btn" aria-label="닫기">✕</button>
+      <div id="dashboard-content"></div>
+    </div>
+  </div>
+
+  <div id="video-overlay" class="hidden">
+    <div id="video-overlay-backdrop"></div>
+    <div id="video-overlay-panel">
+      <button id="video-close-btn" aria-label="닫기">✕</button>
+      <div id="video-frame">
+        <video id="video-player" controls playsinline></video>
+        <iframe id="video-youtube-player" class="hidden" title="YouTube 영상" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div id="video-placeholder" class="hidden">
+          <p>작업물 준비중 입니다</p>
+        </div>
+      </div>
+      <div id="video-info">
+        <h2 id="video-title"></h2>
+        <p id="video-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js?v=71"></script>
+</body>
+</html>
